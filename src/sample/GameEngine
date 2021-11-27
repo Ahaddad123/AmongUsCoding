@@ -1,0 +1,162 @@
+/*
+  @GameEngine.java
+ */
+
+package sample;
+
+import javafx.scene.control.Label;
+import javafx.scene.control.ProgressBar;
+import javafx.scene.layout.TilePane;
+
+/**
+ * Controls the logic of the game
+ *
+ * @author Makenna Halvensleben
+ * @author Andrew Haddad
+ * @author Adelia Rumpel
+ *
+ * @version 02 May 2021
+ */
+public class GameEngine {
+
+    private GraphicsEngine graphics;
+
+    /**
+     * Initializes the GraphicsEngine and Level objects
+     *
+     * @param graphics - GraphicsEngine object
+     */
+    public GameEngine(GraphicsEngine graphics){
+        this.graphics = graphics;
+    }
+
+    public GraphicsEngine getGraphics() {
+        return graphics;
+    }
+
+    public void setGraphics(GraphicsEngine graphics) {
+        this.graphics = graphics;
+    }
+
+    /**
+     * If the character is in the location of an unaccessed task,
+     * the window for that task is displayed.
+     */
+    public void accessTask() {
+        for(int i = 0; i < 8; i++)
+        {
+            if(inTaskLocation() == i && !graphics.getLevel().getTasks()[i].getAccessed())
+            {
+                graphics.displayTask(graphics.getLevel().getTasks()[i]);
+                graphics.getLevel().getTasks()[i].setAccessed(true);
+            }
+        }
+    }
+
+    /**
+     * Checks to see if a task is being accessed
+     * If a task is completed, it disables the task so the character cannot access it again
+     * Displays the impostor sabotage task if one if the designated tasks is completed
+     *
+     * @return if a task has been completed
+     */
+    public boolean getTaskCompleted() {
+        for(int i = 0; i < 8; i++)
+        {
+            if(inTaskLocation() == i)
+            {
+                if(graphics.getLevel().getTasks()[i].getAccessed() && !graphics.getTaskStage().isShowing()) {
+                    TilePane tile = (TilePane) graphics.getGroup().getChildren().get(0).lookup("#tile" + i);
+                    tile.getStyleClass().clear();
+                    tile.getStyleClass().add("completed" + i);
+                    Label label = (Label) graphics.getGroup().getChildren().get(0).lookup("#label" + i);
+                    label.lookup(".text").setStyle("-fx-strikethrough: true");
+                    ProgressBar bar = (ProgressBar)graphics.getGroup().getChildren().get(0).lookup("#progressBar");
+                    bar.setProgress(bar.getProgress() + 0.125);
+
+                    if(i == 2 || i == 5)
+                    {
+                        graphics.displayImpostorTask();
+                    }
+                    graphics.getLevel().getTasks()[i].setCompleted(true);
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Checks to see if the character is in the location of an incomplete task
+     *
+     * @return the index of the task or -1 if not in a task location
+     */
+    public int inTaskLocation()
+    {
+        double x = graphics.getInput().getCharacter().getLayoutX() + 20;
+        double y = graphics.getInput().getCharacter().getLayoutY() + 40;
+
+        if(!graphics.getLevel().getTasks()[0].getCompleted() && (x < 100) && (y < 100)) {
+            return 0;
+        }
+        else if(!graphics.getLevel().getTasks()[1].getCompleted() && (x > 200) && (x < 250) && (y < 100)) {
+            return 1;
+        }
+        else if(!graphics.getLevel().getTasks()[2].getCompleted() && (x > 350) && (y < 100)) {
+            return 2;
+        }
+        else if(!graphics.getLevel().getTasks()[3].getCompleted() && (x < 100) && (y > 200) && (y < 250)) {
+            return 3;
+        }
+        else if(!graphics.getLevel().getTasks()[4].getCompleted() && (x > 350) && (y > 200) && (y < 250)) {
+            return 4;
+        }
+        else if(!graphics.getLevel().getTasks()[5].getCompleted() && (x < 100) && (y > 350)) {
+            return 5;
+        }
+        else if(!graphics.getLevel().getTasks()[6].getCompleted() && (x > 200) && (x < 250) && (y > 350)) {
+            return 6;
+        }
+        else if(!graphics.getLevel().getTasks()[7].getCompleted() && (x > 350) && (y > 350)) {
+            return 7;
+        }
+        else {
+            return -1;
+        }
+    }
+
+    /**
+     * Checks to see if the user beat the level
+     *
+     * @return if all tasks and impostor tasks are completed
+     */
+    public boolean levelCompleted()
+    {
+        if(!graphics.getImpostorStage().isShowing())
+        {
+            for(int i = 0; i < 8; i++)
+            {
+                if(!graphics.getLevel().getTasks()[i].getCompleted())
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        return false;
+    }
+
+    //methods to be completed
+
+    void returnToMainMenu(){}
+
+    void quitGame(){}
+
+    void startGame(){}
+
+    void chooseLevel(){}
+
+    void chooseMode(){}
+
+    void startLevel(){}
+}
