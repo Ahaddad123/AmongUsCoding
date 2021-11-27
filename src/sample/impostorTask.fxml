@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: red; -fx-border-color: white; -fx-border-width: 12;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ImpostorTaskController">
+   <children>
+      <Label layoutX="152.0" layoutY="26.0" text="Impostor Sabotage!" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="97.0" text="Answer 10 multiplication problems before the bar fills or lose the game!" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="264.0" layoutY="147.0" mnemonicParsing="false" onAction="#startTask" prefHeight="27.0" prefWidth="72.0" style="-fx-background-color: white;" text="Start">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </Button>
+      <ProgressBar fx:id="bar" layoutX="37.0" layoutY="344.0" prefHeight="18.0" prefWidth="527.0" progress="0.02" style="-fx-accent: black;" />
+      <Label fx:id="question" layoutX="172.0" layoutY="221.0" prefHeight="39.0" prefWidth="99.0" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Agency FB" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="answerText" layoutX="307.0" layoutY="224.0" onKeyPressed="#enter" prefHeight="38.0" prefWidth="149.0" visible="false" />
+      <Label fx:id="correct" layoutX="232.0" layoutY="292.0" text="Correct Answers:" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="count" layoutX="354.0" layoutY="294.0" prefHeight="24.0" prefWidth="16.0" text="0" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

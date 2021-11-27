@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" gridLinesVisible="true" hgap="10.0" prefHeight="450.0" prefWidth="600.0" vgap="10.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MapController">
+    <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="450.0" stylesheets="@../../../stylesheet.css" GridPane.hgrow="NEVER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="50.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="50.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="50.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="50.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="50.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="50.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="50.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="50.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="-Infinity" minWidth="50.0" prefWidth="50.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="-Infinity" minHeight="50.0" prefHeight="50.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="-Infinity" minHeight="50.0" prefHeight="50.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="-Infinity" minHeight="50.0" prefHeight="50.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="-Infinity" minHeight="50.0" prefHeight="50.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="-Infinity" minHeight="50.0" prefHeight="50.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="-Infinity" minHeight="50.0" prefHeight="50.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="-Infinity" minHeight="50.0" prefHeight="50.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="-Infinity" minHeight="50.0" prefHeight="50.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="-Infinity" minHeight="50.0" prefHeight="50.0" vgrow="NEVER" />
+        </rowConstraints>
+        <children>
+            <TilePane fx:id="tile0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" styleClass="task0" GridPane.columnSpan="2" GridPane.rowSpan="2" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="2" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="3" />
+            <TilePane fx:id="tile1" prefHeight="200.0" prefWidth="200.0" styleClass="task1" GridPane.columnIndex="4" GridPane.rowSpan="2" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="5" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="6" />
+            <TilePane fx:id="tile2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" styleClass="task2" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowSpan="2" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.rowIndex="2" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.rowIndex="3" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <TilePane prefHeight="200.0" prefWidth="200.0" styleClass="ground" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+            <TilePane fx:id="tile3" prefHeight="200.0" prefWidth="200.0" styleClass="task3" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <TilePane fx:id="tile4" prefHeight="200.0" prefWidth="200.0" styleClass="task4" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.rowIndex="5" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+            <TilePane prefHeight="200.0" prefWidth="200.0" styleClass="ground" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.rowIndex="6" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TilePane prefHeight="200.0" prefWidth="200.0" styleClass="ground" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+            <TilePane prefHeight="200.0" prefWidth="200.0" styleClass="ground" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+            <TilePane fx:id="tile5" prefHeight="200.0" prefWidth="200.0" styleClass="task5" GridPane.columnSpan="2" GridPane.rowIndex="7" GridPane.rowSpan="2" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <TilePane fx:id="tile6" prefHeight="200.0" prefWidth="200.0" styleClass="task6" GridPane.columnIndex="4" GridPane.rowIndex="7" GridPane.rowSpan="2" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <TilePane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="ground" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+            <TilePane fx:id="tile7" prefHeight="200.0" prefWidth="200.0" styleClass="task7" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="7" GridPane.rowSpan="2" />
+            <TilePane prefHeight="200.0" prefWidth="200.0" styleClass="ground" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <TilePane prefHeight="200.0" prefWidth="200.0" styleClass="ground" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+            <TilePane prefHeight="200.0" prefWidth="200.0" styleClass="ground" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+            <TilePane prefHeight="200.0" prefWidth="200.0" styleClass="ground" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+
+        </children>
+    </GridPane>
+   <ProgressBar fx:id="progressBar" prefWidth="450.0" progress="0.0" GridPane.valignment="TOP" />
+   <AnchorPane prefHeight="450.0" prefWidth="200.0" GridPane.columnIndex="1">
+      <children>
+         <Label layoutX="40.0" layoutY="22.0" text="Level 1">
+            <font>
+               <Font name="Agency FB" size="24.0" />
+            </font>
+         </Label>
+         <Label layoutX="30.0" layoutY="145.0" text="Task List:">
+            <font>
+               <Font name="Agency FB" size="24.0" />
+            </font>
+         </Label>
+         <Label fx:id="label0" layoutX="25.0" layoutY="187.0" text="Align Engines" />
+         <Label fx:id="label1" layoutX="24.0" layoutY="215.0" text="Chart Course" />
+         <Label fx:id="label2" layoutX="25.0" layoutY="240.0" text="Clean O2" />
+         <Label fx:id="label3" layoutX="24.0" layoutY="264.0" text="Download Data" />
+         <Label fx:id="label4" layoutX="25.0" layoutY="288.0" text="Fix Wiring" />
+         <Label fx:id="label5" layoutX="25.0" layoutY="311.0" text="Fuel Engines" />
+         <Label fx:id="label6" layoutX="25.0" layoutY="333.0" text="Start Reactor" />
+         <Label fx:id="label7" layoutX="25.0" layoutY="359.0" text="Upload Data" />
+         <Button focusTraversable="false" layoutX="31.0" layoutY="392.0" mnemonicParsing="false" onAction="#displayOptions" text="Options">
+            <font>
+               <Font name="Agency FB" size="18.0" />
+            </font>
+         </Button>
+         <Button focusTraversable="false" layoutX="25.0" layoutY="80.0" mnemonicParsing="false" onAction="#displayTopic" text="See Topic">
+            <font>
+               <Font name="Agency FB" size="18.0" />
+            </font>
+         </Button>
+      </children>
+   </AnchorPane>
+    <columnConstraints>
+        <ColumnConstraints />
+      <ColumnConstraints minWidth="10.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>
