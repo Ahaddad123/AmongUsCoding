@@ -1,0 +1,84 @@
+
+.task0 {
+    -fx-background-image: url("lowerEngineActive.png");
+-fx-background-repeat: stretch;
+}
+
+.task1 {
+    -fx-background-image: url("navigationActive.png");
+-fx-background-repeat: stretch;
+}
+
+.task2 {
+    -fx-background-image: url("lowerEngineActive.png");
+-fx-background-repeat: stretch;
+}
+
+.task3 {
+    -fx-background-image: url("electricalActive.png");
+    -fx-background-repeat: stretch;
+}
+
+.task4 {
+    -fx-background-image: url("electricalActive.png");
+    -fx-background-repeat: stretch;
+}
+
+.task5 {
+    -fx-background-image: url("lowerEngineActive.png");
+-fx-background-repeat: stretch;
+}
+
+.task6 {
+    -fx-background-image: url("navigationActive.png");
+-fx-background-repeat: stretch;
+}
+
+.task7 {
+    -fx-background-image: url("lowerEngineActive.png");
+-fx-background-repeat: stretch;
+}
+
+.ground {
+    -fx-background-image: url("tile.png");
+}
+
+.completed0 {
+	-fx-background-image: url("lowerEngineComplete.png");
+-fx-background-repeat: stretch;
+}
+
+.completed1 {
+	-fx-background-image: url("navigationComplete.png");
+-fx-background-repeat: stretch;
+}
+
+.completed2 {
+	-fx-background-image: url("lowerEngineComplete.png");
+-fx-background-repeat: stretch;
+}
+
+.completed3 {
+	-fx-background-image: url("electricalComplete.png");
+    -fx-background-repeat: stretch;
+}
+
+.completed4 {
+	-fx-background-image: url("electricalComplete.png");
+    -fx-background-repeat: stretch;
+}
+
+.completed5 {
+	-fx-background-image: url("lowerEngineComplete.png");
+-fx-background-repeat: stretch;
+}
+
+.completed6 {
+	-fx-background-image: url("navigationComplete.png");
+-fx-background-repeat: stretch;
+}
+
+.completed7 {
+	-fx-background-image: url("lowerEngineComplete.png");
+-fx-background-repeat: stretch;
+}
