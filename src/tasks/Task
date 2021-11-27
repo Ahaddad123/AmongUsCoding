@@ -1,0 +1,117 @@
+/*
+  @Task.java
+ */
+
+package Tasks;
+
+/**
+ * Abstract parent class that implements the Solvable interface
+ * Contains methods necessary to complete a task along with abstract method to be overriden in each child class
+ *
+ * @author Makenna Halvensleben
+ * @author Andrew Haddad
+ * @author Adelia Rumpel
+ *
+ * @version 02 May 2021
+ */
+public abstract class Task implements Solvable
+{
+    private boolean completed;
+    private String correctAnswer;
+    private String mode;
+    private String name;
+    private boolean accessed;
+
+    /**
+     * Initializes the instance variables
+     *
+     * @param correctAnswer - correct response to the task's question
+     * @param mode - Crewmate or Impostor setting
+     * @param name - title of the task
+     */
+    public Task(String correctAnswer, String mode, String name)
+    {
+        completed = false;
+        accessed = false;
+        this.correctAnswer = correctAnswer;
+        this.mode = mode;
+        this.name = name;
+    }
+
+    @Override
+    public boolean getCompleted()
+    {
+        return completed;
+    }
+
+    @Override
+    public void setCompleted(boolean value)
+    {
+        completed = value;
+    }
+
+    @Override
+    public String getCorrectAnswer()
+    {
+        return correctAnswer;
+    }
+
+    /**
+     * Sets the correct answer to the task question
+     *
+     * @param correctAnswer - correct answer to task question
+     */
+    public void setCorrectAnswer(String correctAnswer)
+    {
+        this.correctAnswer = correctAnswer;
+    }
+
+    /**
+     * Gets the mode of the task
+     *
+     * @return Crewmate or Impostor mode
+     */
+    public String getMode()
+    {
+        return mode;
+    }
+
+    /**
+     * Sets the mode of the task
+     *
+     * @param mode - Crewmate or Impostor mode
+     */
+    public void setMode(String mode)
+    {
+        this.mode = mode;
+    }
+
+    @Override
+    public String getName()
+    {
+        return name;
+    }
+
+    /**
+     * Sets the title of the task
+     * Used in the task list and when displaying the task
+     *
+     * @param name - the title of the task
+     */
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+
+    @Override
+    public boolean getAccessed() {
+        return accessed;
+    }
+
+    @Override
+    public void setAccessed(boolean accessed) {
+        this.accessed = accessed;
+    }
+
+    @Override
+    public abstract String displayQuestion();
